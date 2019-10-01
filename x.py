@@ -26,7 +26,7 @@ with open(filepath) as fp:
        cnt += 1
 
 for i in output:
-    url = "https://2019shell1.picoctf.com/problem/47283/index.php?file=admin"
+    url = ""
     cookies = dict(user_info=i)
     response = requests.get(url, cookies=cookies)
     print('> Trying this cookie! : {}'.format(i))
